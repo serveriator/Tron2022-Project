@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/profit.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Profit</title>
+  </head>
+  <body>
+    <h1>+ 8%</h1>
+    <p class="mining">Cloud Mining is Working</p>
+    <img src="images/profit.png" class="profit-img" alt="">
+    <div class="receive-profit">
+      <h2>Mining Profit</h2>
+      <span class="des">Receive for every 24h</span>
+      <br>
+      <div class="receive-button">
+        <img src="images/profit-list.png" class="receive-btn-img">
+        <h4>0 TRX</h4>
+        <input type="button" value="receive" onclick="document.getElementById('notify').style.color ='red';">
+      </div>
+      <b id="notify">You can't receive profit because you didn't invest any Trons.</b>
+    </div>
+    <div class="menu-bottom">
+      <ul>
+        <li>
+          <a href="tron2022.html">
+            <i class="fa fa-home"></i>
+          </a>
+          <span style="color:#fff">Home</span>
+        </li>
+        <li>
+          <a href="profit.html">
+            <i class="fas fa-plus"></i>
+          </a>
+          <span style="color:#fff">Profit</span>
+        </li>
+        <li>
+          <a href="invest.html">
+            <img src="images/bottom.png">
+          </a>
+          <span style="color:#fff">Invest</span>
+        </li>
+        <li>
+          <a href="share.html">
+            <i class="fa fa-share"></i>
+          </a>
+          <span style="color:#fff">Share</span>
+        </li>
+        <li>
+          <a href="withdraw.html">
+            <i class="fa fa-wallet"></i>
+          </a>
+          <span style="color:#fff">withdraw</span>
+        </li>
+      </ul>
+    </div>
+            
+    <script language="JavaScript1.2">
+    function disableselect(e){
+    return false
+    }function reEnable(){
+    return true
+    }document.onselectstart=new Function ("return false")
+    if (window.sidebar){
+    document.onmousedown=disableselect
+    document.onclick=reEnable
+    }
+    var message="";
+    ///////////////////////////////////
+    function clickIE() {if (document.all) {(message);return false;}}
+    function clickNS(e) {if 
+    (document.layers||(document.getElementById&&!document.all)) {
+    if (e.which==2||e.which==3) {(message);return false;}}}
+    if (document.layers) 
+    {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+    else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tron 2022</title>
+    <link rel="stylesheet" href="css/invest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Invest</title>
+  </head>
+  <body>
+    <h2>Invest</h2>
+    <img src="images/qrcode.jpg" class="qr" alt="QR Code Address">
+    <p class="qrcode">TRX QR-Code Address</p>
+    <form>
+      <input type="text" value="TNMZJFeBANkEo3t2FDNhzYDzqDCWbJCtUJ" readonly id="select">
+        
+      <br>
+      <p class="attention">
+        Attention! This address only supports TRX transfers via any crypto wallet. Don't send any coins except Tron. Such
+          deposits will not be credited.
+          <br>
+          <span>
+          The funds will be credited as soon as system get confirmation from the TRON network. ( Minimum 5 TRX)
+          </span>
+      </p>
+      <button type="submit" value="Recharge Completed" class="charged" readonly>
+        Recharge Completed
+      </button>
+    </form>
+    
+    <div class="menu-bottom">
+      <ul>
+        <li>
+          <a href="tron2022.html">
+            <i class="fa fa-home"></i>
+          </a>
+          <span style="color:#fff">Home</span>
+        </li>
+        <li>
+          <a href="profit.html">
+            <i class="fas fa-plus"></i>
+          </a>
+          <span style="color:#fff">Profit</span>
+        </li>
+        <li>
+          <a href="invest.html">
+            <img src="images/bottom.png">
+          </a>
+          <span style="color:#fff">Invest</span>
+        </li>
+        <li>
+          <a href="share.html">
+            <i class="fa fa-share"></i>
+          </a>
+          <span style="color:#fff">Share</span>
+        </li>
+        <li>
+          <a href="withdraw.html">
+            <i class="fa fa-wallet"></i>
+          </a>
+          <span style="color:#fff">withdraw</span>
+        </li>
+      </ul>
+    </div>
+        
+    <script language="JavaScript1.2">
+    function disableselect(e){
+    return false
+    }function reEnable(){
+    return true
+    }document.onselectstart=new Function ("return false")
+    if (window.sidebar){
+    document.onmousedown=disableselect
+    document.onclick=reEnable
+    }
+    var message="";
+
+    function clickIE() {if (document.all) {(message);return false;}}
+    function clickNS(e) {if 
+    (document.layers||(document.getElementById&&!document.all)) {
+    if (e.which==2||e.which==3) {(message);return false;}}}
+    if (document.layers) 
+    {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+    else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+    </script>
+    <script src="js/index.js"></script>
+   
+    <script src="js/clipboard.js/dist/clipboard.min.js"></script>
+    <script>
+      new ClipboardJS(".btn-copy");
+    </script>
+  </body>
+</html>

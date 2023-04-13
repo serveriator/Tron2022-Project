@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tron 2022</title>
+    <link rel="stylesheet" href="css/withdraw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Withdraw</title>
+  </head>
+  <body>
+    <h3>Withdraw Trons</h3>
+    <form>
+      <input type="number" value="0.00" readonly class="tron-value">
+      <br>
+      <select>
+        <option>Main Wallet</option>
+        <option>Income Wallet</option>
+      </select>
+      <br>
+      <input type="text" placeholder="value : 0.01 to 1000">
+      <br>
+      <input type="text" placeholder="Your Tron Address(Start with T)">
+      <br>
+      <input type="submit" value="Confirm">
+      <p>
+        Pay attention all of your Trons (include rewards,basic-Trons,profit) are on the income part.
+        You can't withdraw on the main part after 6 months.
+      </p>
+      </form>
+      <div class="menu-bottom">
+      <ul>
+        <li>
+          <a href="tron2022.html">
+            <i class="fa fa-home"></i>
+          </a>
+          <span style="color:#fff">Home</span>
+        </li>
+        <li>
+          <a href="profit.html">
+            <i class="fas fa-plus"></i>
+          </a>
+          <span style="color:#fff">Profit</span>
+        </li>
+        <li>
+          <a href="invest.html">
+            <img src="images/bottom.png" >
+          </a>
+          <span style="color:#fff">Invest</span>
+        </li>
+        <li>
+          <a href="share.html">
+            <i class="fa fa-share"></i>
+          </a>
+          <span style="color:#fff">Share</span>
+        </li>
+        <li>
+          <a href="withdraw.html">
+            <i class="fa fa-wallet"></i>
+          </a>
+          <span style="color:#fff">withdraw</span>
+        </li>
+      </ul>
+    </div>
+        <!-- JavaScript Codes -->
+    <script language="JavaScript1.2">
+    function disableselect(e){
+    return false
+    }function reEnable(){
+    return true
+    }document.onselectstart=new Function ("return false")
+    if (window.sidebar){
+    document.onmousedown=disableselect
+    document.onclick=reEnable
+    }
+    var message="";
+    ///////////////////////////////////
+    function clickIE() {if (document.all) {(message);return false;}}
+    function clickNS(e) {if 
+    (document.layers||(document.getElementById&&!document.all)) {
+    if (e.which==2||e.which==3) {(message);return false;}}}
+    if (document.layers) 
+    {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+    else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+    </script>
+  </body>
+</html>
