@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  -moz-user-select: all;
+  user-select: all;
+}
+body{
+  background: #181208;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+.table{
+  width: 360px;
+  background: #fff;
+  text-align: center;
+  padding: 19px;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin: 0 auto;
+}
+table{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+th{
+  background: #ffba00;
+  border-radius: 5px;
+  color: #fff;
+  padding: 14px;
+  width: 70px;
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+td{
+  padding: 10px;
+}
+
+.menu-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #000000;
+}
+.menu-bottom ul{
+  list-style: none;
+  text-align: center;
+}
+.menu-bottom li{
+  display: inline-block;
+}
+.menu-bottom a{
+  color: #fff;
+  font-size: 29px;
+  padding: 0 15px;
+}
+.menu-bottom img{
+  width: 61px;
+}
+.menu-bottom span{
+  display: block;
+}
+.menu-bottom i.fa-home{
+  color: #ffdd00;
+}
+h2{
+  color: #fff;
+  padding: 20px;
+}
+@media screen and (min-width:768px){
+  body{
+    font-size: 18px;
+  }
+  .table{
+    width: 440px;
+  }
+  table{
+    margin: 0 auto;
+  }
+}

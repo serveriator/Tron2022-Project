@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  -moz-user-select: all;
+  user-select: all;
+}
+body{
+  background: #181208;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.share-link{
+  color: #ffce00;
+  padding-top: 80px;
+}
+form{
+  width: 340px;
+  height: 100px;
+  background: #fff;
+  border-radius: 30px;
+  margin: 20px auto;
+  padding: 20px 0;
+}
+input[type=text]{
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+form p{
+  padding-top: 10px;
+  color: rgb(0,143,122);
+}
+.read{
+  width: 340px;
+  line-height: 27px;
+  margin: 30px auto;
+  margin-bottom: 137px;
+  padding: 20px;
+  border-radius: 60px;
+  background: rgb(232,217,154);
+}
+.read p{
+  color: rgba(0,0,0,0.774);
+}
+.adshare{
+  color: #fff;
+  padding-top: 20px;
+}
+.menu-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #000000;
+}
+.menu-bottom ul{
+  list-style: none;
+  text-align: center;
+}
+.menu-bottom li{
+  display: inline-block;
+}
+.menu-bottom a{
+  color: #fff;
+  font-size: 29px;
+  padding: 0 15px;
+}
+.menu-bottom img{
+  width: 61px;
+}
+.menu-bottom span{
+  display: block;
+}
+.menu-bottom i.fa-share{
+  color: #ffdd00;
+}
+@media screen and (min-width:768px){
+  .menu-bottom a{
+    padding: 0 40px;
+  }
+  body{
+    font-size: 16px;
+  }
+  .
+}

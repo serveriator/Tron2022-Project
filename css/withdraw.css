@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  -moz-user-select: all;
+  user-select: all;
+}
+body{
+  background: rgb(35,31,23);
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+h3{
+  color: #fff;
+  padding: 25px;
+}
+form{
+  width: 350px;
+  box-sizing: content-box;
+  background: #fff;
+  border-radius: 30px;
+  padding-top: 8px;
+  margin: 28px auto;
+  text-align: center;
+}
+input , select{
+  width: 320px;
+  height: 29px;
+  margin: 10px;
+  border: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 50px;
+  padding: 6px;
+  outline: none;
+}
+select{
+  background: #fff;
+  color: rgb(0,172,223);
+}
+input[type=number]{
+  height: 150px;
+  border-radius: 20px;
+  padding: 30px;
+  color: rgb(255,171,30);
+  font-size: 50px;
+}
+input[type=submit]{
+  background: rgb(255,171,30);
+  color: rgb(255,255,255);
+}
+p{
+  color: red;
+  padding: 10px;
+}
+.menu-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #000000;
+}
+.menu-bottom ul{
+  list-style: none;
+  text-align: center;
+}
+.menu-bottom li{
+  display: inline-block;
+}
+.menu-bottom a{
+  color: #fff;
+  font-size: 29px;
+  padding: 0 15px;
+}
+.menu-bottom img{
+  width: 61px;
+}
+.menu-bottom span{
+  display: block;
+}
+.menu-bottom i.fa-wallet{
+  color: #ffdd00;
+}
+@media screen and (min-width:768px){
+  .menu-bottom a{
+    padding: 0 40px;
+  }
+  body{
+    font-size: 16px;
+  }
+  form{
+    margin-bottom: 120px;
+  }
+}
